@@ -1,0 +1,20 @@
+@import '../../styles/mixin.scss';
+@import '../../styles/variables.scss';
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+
+  @include box-shadow-sm;
+
+  &__hidden-text {
+    @include visually-hidden;
+  }
+
+  &__logo-image {
+    height:35px;
+    padding:10px;
+    vertical-align: top;
+  }
+}

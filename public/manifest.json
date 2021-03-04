@@ -1,0 +1,8 @@
+{
+  "short_name": "Developr Test",
+  "name": "Avant Arte - Developer Test",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}
