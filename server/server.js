@@ -1,4 +1,11 @@
-{
+const express = require('express')
+var cors = require("cors")
+
+const PORT = process.env.PORT || 3500
+const app = express()
+
+app.use(cors())
+const data = {
     "works": [
         {
             "id": 1,
@@ -14,7 +21,7 @@
             "id": 2,
             "title": "Yue Minjun",
             "tags": [
-                "Sold Out"
+                "Sold out"
             ],
             "image": "//cdn.shopify.com/s/files/1/0260/5524/5923/products/PRINT_1A_online_500x.jpg?v=1608632645",
             "url": "https://shop.avantarte.com/products/hibiscus-handfinished",
@@ -44,7 +51,7 @@
             "id": 5,
             "title": "Paul Insect",
             "tags": [
-                "Sold Out"
+                "Sold out"
             ],
             "image": "//cdn.shopify.com/s/files/1/0260/5524/5923/products/PRINT_4A_online_afd0023e-5666-4fe7-ab97-58c0d183b98e_500x.jpg?v=1610713268",
             "url": "https://shop.avantarte.com/products/the-observer-1",
@@ -55,7 +62,7 @@
             "title": "Elmgreen & Dragset",
             "tags": [
                 "Coming soon",
-                "Availble"
+                "Available"
             ],
             "image": "//cdn.shopify.com/s/files/1/0260/5524/5923/products/ELGREEN_DRAGSET_01_online_b7358648-4f6d-44a5-8e14-e5ce272f5dba_500x.jpg?v=1605101928",
             "url": "https://shop.avantarte.com/products/the-future-elmgreen-dragset",
@@ -63,3 +70,11 @@
         }
     ]
 }
+
+app.get('/works', (req, res) => {
+    res.send(data.works)
+})
+
+app.listen(PORT, () =>
+  console.log(`Listening at http://localhost:${PORT}`)
+)

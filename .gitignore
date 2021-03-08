@@ -1,15 +1,14 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
+app/node_modules
+server/node_modules
 
-# dependencies
-node_modules
+app/yarn.lock
+package-lock.json
 
-# testing
-coverage
+app/build
+server/build
 
-# production
-build
 
-# misc
+
 .DS_Store
-
-npm-debug.log*
+app/.DS_Store
+server/.DS_Store 
