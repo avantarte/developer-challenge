@@ -2,10 +2,13 @@ app/node_modules
 server/node_modules
 
 app/yarn.lock
+package-lock.json
 
 app/build
 server/build
 
 
+
+.DS_Store
 app/.DS_Store
 server/.DS_Store 
