@@ -2,3 +2,10 @@ app/node_modules
 server/node_modules
 
 app/yarn.lock
+
+app/build
+server/build
+
+
+app/.DS_Store
+server/.DS_Store 
